@@ -1,15 +1,227 @@
+/* font files */
+@font-face {
+    font-family: "Jost";
+    src: url(../assets/Jost-VariableFont_wght.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Jost";
+    src: url(../assets/Jost-SemiBold.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Jost";
+    src: url(../assets/Jost-ThinItalic.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Jakarta Sans";
+    src: url(../assets/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+    font-weight: 150;
+}
+
+:root {
+ /* Primary palette */
+ --signal-colour: #FFD200;
+ --primair-100: #000000;
+ --primair-80: #1F1F1F;
+ --primair-30: #D7D2CB;
+ --primair-30-40: #E9E6E3;
+ --primair-30-20: #F2F1F0;
+ --primair-0: #fff;
+
+ /* Supporting palette */
+ --energetic-1: #FF671F;
+ --energetic-2: #EE2737;
+ --energetic-3: #A20067;
+
+ --future-focussed-1: #C4B000;
+ --future-focussed-2: #818C2D;
+ --future-focussed-3: #154734;
+
+ --independent-1: #40C1AC;
+ --independent-2: #0094b3;
+ --independent-3: #002C5F;
+
+/* font palette */
+ --primary-font: "Jost", sans-serif;
+ --secundairy-font: "Jakarta sans", sans-serif;
+
+--font-weight: 200;
+--font-header: 400;
+
+}
+
 * {
     box-sizing: border-box;
-    font-size: 1em;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    /* Primary palette */
- --primair-50: #FFD200;
- --primair-100:  #000000;
- --primair-30:  #D7D2CB;
- --primair-0:  #fff;
+body {
+    background-color: var(--primair-0);
+    color: var(--primair-100);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight);
+}
+
+main {
+    width: 100%;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+	color: inherit;
+	font: inherit;
+    padding: 0;
+	outline: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: var(--font-header);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: var(--font-header);
+    line-height: 1.3em;
+}
+
+h5 {
+    padding: 0 0 .4em 0;
+    font-size: 1em;
+}
+/* styling nav */
+.nav-header {
+    background-color: var(--primair-80);
+    display: flex;
+    flex-direction: row;
+    height: 3.5em;
+    justify-content: space-between;
+}
+
+.nav-branding img {
+    height: 3.2em;
+    margin: .1em 0 0 .8em;
+}
+
+.menu-search-mobile {
+    margin: .25em 0 0 13em
+}
+
+.hamburger {
+    cursor: pointer;
+    margin: .85em .8em 0 0;
+
+}
+
+.bar {
+    background-color: var(--primair-0);
+    display: block;
+    height: 2.3px;
+    margin: 4.2px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 22px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+/* main-content styling | container 1 */
+.container-live-radio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0 0 0;
+    margin-inline: auto;
+    min-width: 15em;
+}
+
+.container-live-radio img {
+    width: 10em;
+    display: flex;
+    padding: 0 0 1em 0;
+}
+
+.container-live-radio button { 
+    font-weight: var(--font-header);
+    border: solid var(--primair-30-20) .1em;
+    display: flexbox;
+    width: 15em;
+    height: 3em;
+    margin: 0 0 .5em 0;
+}
+
+.container-live-radio p:nth-of-type(1) {
+    display: flex;
+    margin: 0 0 .65em 0;
+}
+
+.container-live-radio p:nth-of-type(2) {
+    display: flexbox;
+    padding: 0.85em 2.5em 0 2.5em;
+    max-width: 75ch;
+    text-align: justify;
+}
+
+/* main-content styling | container 2 */
+.container-promoquote-efficientlistening {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1.6em 0 0 0;
+    min-width: 15em;
+    
+    background-color: var(--signal-colour);
+}
+
+.container-promoquote-efficientlistening h2 {
+    display: flexbox;
+    padding: 0 .85em 0 1.15em;
+    max-width: 19ch;
+    text-align: start;
+}
+
+.container-promoquote-efficientlistening h4 {
+    align-items: flex-start;
+    display: flex;
+    background-color: chartreuse;
+    /* padding: 0 .85em 0 0; */
+
+}
+
+
+/* footer styling */
+footer {
+    background-color: var(--primair-80);
+    color: var(--primair-0);
+    font-size: .8em;
+    font-weight: 200;
+    line-height: 1.8em;
+}
+
+footer a { 
+    color: var(--primair-0);
+}
+
+footer nav {
+    margin: 2.5em 0 0 1em;
+}
+
+nav ul {
+    padding: 0 0 1.4em 0;
 }
