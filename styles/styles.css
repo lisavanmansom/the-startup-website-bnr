@@ -50,7 +50,6 @@
 
 --font-weight: 200;
 --font-header: 400;
-
 }
 
 * {
@@ -98,10 +97,18 @@ h2 {
     font-weight: var(--font-header);
     line-height: 1.3em;
 }
-
+h4 {
+    font-size: 1.3em;
+    font-weight: var(--font-header);
+}
 h5 {
     padding: 0 0 .4em 0;
     font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: var(--font-weight);
 }
 /* styling nav */
 .nav-header {
@@ -180,18 +187,16 @@ h5 {
 
 /* main-content styling | container 2 */
 .container-promoquote-efficientlistening {
-    align-items: center;
     display: flex;
     flex-direction: column;
     margin: 1.6em 0 0 0;
     min-width: 15em;
-    
-    background-color: var(--signal-colour);
 }
 
 .container-promoquote-efficientlistening h2 {
     display: flexbox;
-    padding: 0 .85em 0 1.15em;
+    line-height: 1.3em;
+    padding: 0 .85em 0 1.2em;
     max-width: 19ch;
     text-align: start;
 }
@@ -199,11 +204,65 @@ h5 {
 .container-promoquote-efficientlistening h4 {
     align-items: flex-start;
     display: flex;
-    background-color: chartreuse;
-    /* padding: 0 .85em 0 0; */
-
+    padding: 0.5em 0 0 2em;
 }
 
+.container-promoquote-efficientlistening p {
+    align-items: flex-start;
+    display: flex;
+    padding: 0 0 1.5em 2.5em;
+}
+
+.container-promoquote-efficientlistening a {
+    align-items: center;
+    background-color: var(--primair-80);
+    color: var(--primair-0);
+    display: flex;
+    font-weight: var(--font-header);
+    height: 3em;
+    justify-content: center;
+    margin: 0 auto;
+    width: 15em;
+}
+
+/* main-content styling | container 3 */
+.container-promo-app h2 {
+    display: flexbox;
+    padding: 1em .85em 0 1.2em;
+    text-align: start;
+}
+
+.container-promo-app h4 {
+    align-items: flex-start;
+    display: flex;
+    padding: 0 0 0 1.87em;
+}
+
+.container-promo-app p {
+    display: flexbox;
+    padding: 0.5em 2.5em 0 2.5em;
+    max-width: 75ch;
+    text-align: justify;
+}
+
+.app-landing-page {
+    border-bottom: solid var(--signal-colour) .1em;
+    color: var(--primair-100);
+    display: flex;
+    justify-content: center;
+    padding: 1.2em 0 0 0;
+    margin: 0 auto;
+    width: 7em;
+}
+
+.container-promo-app ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: .75em;
+    padding: 2em 0 2em 0;
+}
 
 /* footer styling */
 footer {
