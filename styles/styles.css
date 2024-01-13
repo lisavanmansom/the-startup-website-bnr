@@ -88,6 +88,7 @@ button {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -225,12 +226,21 @@ p {
 }
 
 .container-live-radio button { 
-    font-weight: var(--font-header);
-    border: solid var(--primair-30-20) .1em;
+    align-items: center;
     display: flexbox;
+
     width: 15em;
     height: 3em;
     margin: 0 0 .5em 0;
+
+    font-weight: var(--font-header);
+    border: solid var(--primair-30-20) .1em;
+}
+
+.live-buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-live-radio p:nth-of-type(1) {
@@ -350,13 +360,14 @@ p {
 }
 
 .app-landing-page {
-    border-bottom: solid var(--primair-80) .1em;
+    border-bottom: solid var(--primair-80) .08em;
     color: var(--primair-100);
     display: flex;
     justify-content: center;
     padding: 1.2em 0 0 0;
     margin: 0 auto;
     width: 7em;
+    z-index: 2;
 }
 
 .container-promo-app ul {
@@ -390,7 +401,7 @@ p {
     rotate: 90deg;
 
     position: absolute; 
-    bottom: -24px;
+    bottom: -20px;
 }
 
 
@@ -428,4 +439,46 @@ nav ul {
     .slice-3 {
         top: -96px;
     }
+
+
+}
+
+@media (min-width:525px) {
+    .slice-2 {
+        height: 1500px;
+        top: -235px;
+    }
+
+    .slice-3 {
+        top: -420px;
+        height: 1500px;
+        background-color: var(--energetic-2);
+    }
+
+    .slice-4 {
+        background-color: var(--independent-1);
+    }
+
+
+    .live-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: .5em;
+
+        width: 25em;
+    }
+
+    .container-live-radio p:nth-of-type(2) {
+        max-width: 55ch;
+        margin: 0 0 1.5em 0;
+    }
+
+    .container-promoquote-efficientlistening h2 {
+        max-width: 25ch;
+    }
+
+    .container-promoquote-efficientlistening p {
+        max-width: 46ch;
+    }
+
 }
