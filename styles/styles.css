@@ -66,6 +66,8 @@ body {
     flex-direction: column;
     font-family: var(--primary-font);
     font-weight: var(--font-weight);
+    overflow-x: hidden;
+
 }
 
 main {
@@ -148,6 +150,49 @@ p {
     display: none;
 }
 
+/* main-content styling | background */
+
+.background {
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 624px;
+    position: absolute;
+
+
+
+    /* position: relative;
+    width: clamp(min(10vw, 20rem), 320px, max(19vw, 37.5rem));
+    height: 600px; */
+}
+
+.slice { 
+    background-color: var(--signal-colour);
+    width: 260px;
+    height: 1000px;
+
+    transform: skew(10deg);
+    rotate: 90deg;
+
+    position: absolute; 
+    top: -485px;
+    z-index: -10;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    position: absolute; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid var(--primair-80);
+
+    display: none;
+  }
+
+    
 /* main-content styling | container 1 */
 .container-live-radio {
     align-items: center;
