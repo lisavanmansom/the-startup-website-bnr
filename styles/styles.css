@@ -26,6 +26,7 @@
  --signal-colour: #FFD200;
  --primair-100: #000000;
  --primair-80: #1F1F1F;
+ --primair-80-97: #262520;
  --primair-30: #D7D2CB;
  --primair-30-40: #E9E6E3;
  --primair-30-20: #F2F1F0;
@@ -95,12 +96,12 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: var(--font-header);
     line-height: 1.3em;
 }
 h4 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: var(--font-header);
 }
 h5 {
@@ -150,55 +151,56 @@ p {
     display: none;
 }
 
-/* main-content styling | background */
-
-.background {
-    overflow: hidden;
+/* main-content styling | background container 1 */
+.background-container-1 {
     display: block;
+    width: 100%;
+    height: 100%;
+
     margin: 0 auto;
-    width: 1200px;
-    height: 624px;
+    overflow: hidden;
+
     position: absolute;
-
-
-
-    /* position: relative;
-    width: clamp(min(10vw, 20rem), 320px, max(19vw, 37.5rem));
-    height: 600px; */
 }
 
-.slice { 
+.slice-1 { 
     background-color: var(--signal-colour);
     width: 260px;
     height: 1000px;
+    z-index: -10;
+    opacity: 90%;
 
     transform: skew(10deg);
     rotate: 90deg;
 
     position: absolute; 
     top: -485px;
-    z-index: -10;
 }
 
-.triangle {
+  .triangle-1 {
     width: 0; 
     height: 0; 
-    position: absolute; 
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    
-    border-left: 60px solid var(--primair-80);
 
-    display: none;
+    position: absolute;
+    z-index: -9;
+    top: 51px; 
+    right: -100px;
+
+    rotate: -3deg;
+
+    border-top: 40px solid transparent;
+    border-bottom: 80px solid transparent;
+    
+    border-right: 300px solid var(--primair-80-97);
   }
-
-    
+  
+ 
 /* main-content styling | container 1 */
 .container-live-radio {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 3em 0 0 0;
+    margin: 3em 0 3em 0;
     margin-inline: auto;
     min-width: 15em;
 }
@@ -231,9 +233,33 @@ p {
 }
 
 /* main-content styling | container 2 */
+.background-container-2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slice-2 { 
+    background-color: var(--primair-0);
+    width: 150px;
+    height: 1000px;
+
+    transform: skew(-4deg);
+    rotate: 90deg;
+
+    position: absolute; 
+    top: -55px;
+}
+
 .container-promoquote-efficientlistening {
+    background-color: var(--primair-80);
     display: flex;
     flex-direction: column;
+    padding: 2em 0 2.7em 0;
     margin: 1.6em 0 0 0;
     min-width: 15em;
 }
@@ -244,37 +270,50 @@ p {
     padding: 0 .85em 0 1.2em;
     max-width: 19ch;
     text-align: start;
+    color: var(--signal-colour);
 }
 
 .container-promoquote-efficientlistening h4 {
     align-items: flex-start;
     display: flex;
-    padding: 0.5em 0 0 2em;
+    padding: 1em 0 0 2em;
+    color: var(--primair-0);
 }
 
 .container-promoquote-efficientlistening p {
     align-items: flex-start;
     display: flex;
-    padding: 0 0 1.5em 2.5em;
+    max-width: 26ch;
+    padding: .2em 0 1.5em 2.8em;
+    color: var(--primair-0);
 }
 
 .container-promoquote-efficientlistening a {
-    align-items: center;
-    background-color: var(--primair-80);
-    color: var(--primair-0);
     display: flex;
-    font-weight: var(--font-header);
-    height: 3em;
+    align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 1em 0 0 2.8em;
+    z-index: 2;
+
+    background-color: var(--signal-colour);
+    color: var(--primair-80);
+    font-weight: var(--font-header);
+
+    height: 3em;
     width: 15em;
 }
 
 /* main-content styling | container 3 */
+.container-promo-app {
+    display: flex;
+    flex-direction: column;
+}
+
 .container-promo-app h2 {
     display: flexbox;
     padding: 1em .85em 0 1.2em;
     text-align: start;
+    z-index: 2;
 }
 
 .container-promo-app h4 {
@@ -307,7 +346,10 @@ p {
     flex-direction: row;
     gap: .75em;
     padding: 2em 0 2em 0;
+
+    z-index: 2;
 }
+
 
 /* footer styling */
 footer {
@@ -316,6 +358,8 @@ footer {
     font-size: .8em;
     font-weight: 200;
     line-height: 1.8em;
+
+    z-index: 2;
 }
 
 footer a { 
@@ -328,4 +372,13 @@ footer nav {
 
 nav ul {
     padding: 0 0 1.4em 0;
+}
+
+
+/* mediaquery's */
+
+@media (min-width:357px) {
+    .slice-2 {
+        top: -96px;
+    }
 }
