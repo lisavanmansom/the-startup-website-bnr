@@ -128,7 +128,7 @@ p {
 }
 
 .menu-search-mobile {
-    margin: .25em 0 0 13em
+    margin: .25em 0 0 11em
 }
 
 .hamburger {
@@ -228,7 +228,7 @@ p {
 .container-live-radio p:nth-of-type(2) {
     display: flexbox;
     padding: 0.85em 2.5em 0 2.5em;
-    max-width: 75ch;
+    max-width: 45ch;
     text-align: justify;
 }
 
@@ -244,12 +244,13 @@ p {
 }
 
 .slice-2 { 
-    background-color: var(--primair-0);
+    background-color: var(--primair-30-20);
     width: 150px;
     height: 1000px;
 
     transform: skew(-4deg);
     rotate: 90deg;
+    z-index: 1;
 
     position: absolute; 
     top: -55px;
@@ -307,11 +308,13 @@ p {
 .container-promo-app {
     display: flex;
     flex-direction: column;
+
+    background-color: var(--signal-colour);
 }
 
 .container-promo-app h2 {
     display: flexbox;
-    padding: 1em .85em 0 1.2em;
+    padding: 1.5em .85em 0 1.2em;
     text-align: start;
     z-index: 2;
 }
@@ -320,6 +323,7 @@ p {
     align-items: flex-start;
     display: flex;
     padding: 0 0 0 1.87em;
+    z-index: 2;
 }
 
 .container-promo-app p {
@@ -327,10 +331,11 @@ p {
     padding: 0.5em 2.5em 0 2.5em;
     max-width: 75ch;
     text-align: justify;
+    z-index: 2;
 }
 
 .app-landing-page {
-    border-bottom: solid var(--signal-colour) .1em;
+    border-bottom: solid var(--primair-80) .1em;
     color: var(--primair-100);
     display: flex;
     justify-content: center;
@@ -348,6 +353,29 @@ p {
     padding: 2em 0 2em 0;
 
     z-index: 2;
+}
+
+.background-container-3{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slice-3 { 
+    background-color: var(--signal-colour);
+    width: 150px;
+    height: 1000px;
+    z-index: 2;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+
+    position: absolute; 
+    bottom: -24px;
 }
 
 
