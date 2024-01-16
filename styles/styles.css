@@ -319,6 +319,18 @@ p {
     padding: 2em 0 2em 0;
 }
 
+.li-svg li:nth-of-type(2) {
+    width: 8em;
+    height: 2.5em;
+    object-fit: contain;
+    background-color: var(--primair-100);
+}
+
+.li-svg li:nth-of-type(1) {
+
+    height: 3em;
+    object-fit: contain;
+}
 
 
 
@@ -343,6 +355,13 @@ footer nav {
 
 nav ul {
     padding: 0 0 1.4em 0;
+}
+
+.app-download li:nth-of-type(2) {
+    width: 9.5em;
+    height: 2.5em;
+    object-fit: contain;
+    background-color: var(--primair-100);
 }
 
 /* background elements */
@@ -648,7 +667,7 @@ nav ul {
     rotate: 90deg;
 
     position: absolute; 
-    top: -815px;
+    top: -795px;
 }
 
 
@@ -828,7 +847,7 @@ nav ul {
     rotate: 90deg;
 
     position: absolute; 
-    top: -855px;
+    top: -825px;
 }
 
 .slice-4 { 

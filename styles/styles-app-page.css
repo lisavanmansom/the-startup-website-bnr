@@ -1,0 +1,297 @@
+/* font files */
+@font-face {
+    font-family: "Jost";
+    src: url(../assets/Jost-VariableFont_wght.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Jost";
+    src: url(../assets/Jost-SemiBold.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Jost";
+    src: url(../assets/Jost-ThinItalic.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Jakarta Sans";
+    src: url(../assets/PlusJakartaSans-Italic-VariableFont_wght.ttf);
+    font-weight: 150;
+}
+
+:root {
+ /* Primary palette */
+ --signal-colour: #FFD200;
+ --signal-colour-90: #FCD52D;
+ --primair-100: #000000;
+ --primair-80: #1F1F1F;
+ --primair-80-97: #262520;
+ --primair-30: #D7D2CB;
+ --primair-30-40: #E9E6E3;
+ --primair-30-20: #F2F1F0;
+ --primair-0: #fff;
+
+ /* Supporting palette */
+ --energetic-1: #FF671F;
+ --energetic-2: #EE2737;
+ --energetic-3: #A20067;
+
+ --future-focussed-1: #C4B000;
+ --future-focussed-2: #818C2D;
+ --future-focussed-3: #154734;
+
+ --independent-1: #40C1AC;
+ --independent-2: #0094b3;
+ --independent-3: #002C5F;
+
+/* font palette */
+ --primary-font: "Jost", sans-serif;
+ --secundairy-font: "Jakarta sans", sans-serif;
+
+--font-weight: 200;
+--font-header: 400;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    flex-direction: row;
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight);
+}
+
+body {
+    background-color: var(--primair-0);
+    color: var(--primair-100);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    font-weight: var(--font-weight);
+    overflow-x: hidden;
+
+}
+
+main {
+    width: 100%;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+	color: inherit;
+	font: inherit;
+    padding: 0;
+	outline: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: var(--font-header);
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: var(--font-header);
+    line-height: 1.3em;
+}
+h4 {
+    font-size: 1.4em;
+    font-weight: var(--font-header);
+}
+h5 {
+    padding: 0 0 .4em 0;
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+    font-weight: var(--font-weight);
+}
+/* styling nav */
+.nav-header {
+    background-color: var(--primair-80);
+    display: flex;
+    flex-direction: row;
+    height: 3.5em;
+    justify-content: end;
+    gap: 2em;
+}
+
+.nav-branding img {
+    height: 3.2em;
+    margin: .1em 0 0 0em;
+
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+}
+
+.hamburger {
+    cursor: pointer;
+    margin: .85em .8em 0 0;
+}
+
+.bar {
+    background-color: var(--primair-0);
+    display: block;
+    height: 2.3px;
+    margin: 4.2px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 22px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+/* Main styling | container 1*/
+.container-1 {
+    align-items: center;
+    background-color: var(--signal-colour);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2em 0 0 0;
+}
+
+.container-1-text {
+    display: flex;
+    flex-direction: column;
+    width: 5em;
+    margin: -4.6em 0 0 25em;
+}
+
+.container-1 h1 {
+    margin: 2em 0 0 1em;
+    min-width: 10ch;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+.container-1 h2 {
+    margin: .5em 0 0 1.4em;
+    min-width: 10ch;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.container-1 img:nth-of-type(1) {
+    width: 27em;
+    rotate: -5deg; 
+    margin: 0 13em .5em 0;
+}
+
+.container-1 img:nth-of-type(2) {
+    display: none;
+    position: absolute;
+}
+
+/* app links */
+.container-1 a:nth-of-type(1) {
+    margin: 1em 0 0.25em 2em;
+}
+
+.container-1 a:nth-of-type(2) {
+    width: 7.5em;
+    height: 2em;
+    object-fit: contain;
+    background-color: var(--primair-100);
+    margin: 0 0 0 2em;
+}
+
+/* Main styling | container 2 */
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 0 0;
+    align-items: center;
+}
+
+.container-2 h3 {
+    max-width: 35ch;
+    font-size: 1.4em;
+    margin: 0 0 1em 0;
+}
+
+.container-2 p {
+    display: flex;
+    flex-direction: column;
+    max-width: 28ch;
+    text-align: justify;
+    margin: 0 0 1em 0;
+}
+
+.container-2 ul {
+    background-color: violet;
+    max-width: 28ch;
+    margin: 0 0 1em 0;
+    /* list-style-type: circle;
+    list-style-position: inside; */
+}
+
+.container-2 h3:nth-of-type(2) {
+    max-width: 18ch;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.container-2 a:nth-of-type(2) {
+    width: 8.5em;
+    height: 2em;
+    object-fit: contain;
+    background-color: var(--primair-100);
+}
+
+.container-2-app {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+/* footer styling */
+footer {
+    background-color: var(--primair-80);
+    color: var(--primair-0);
+    font-size: .8em;
+    font-weight: 200;
+    line-height: 1.8em;
+
+    z-index: 2;
+}
+
+footer a { 
+    color: var(--primair-0);
+}
+
+footer nav {
+    margin: 2.5em 0 0 1em;
+}
+
+nav ul {
+    padding: 0 0 1.4em 0;
+}
+
+.app-download-3 li:nth-of-type(2) {
+    width: 9.5em;
+    height: 2.5em;
+    object-fit: contain;
+    background-color: var(--primair-100);
+}
+
