@@ -306,6 +306,7 @@ audio {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 0 0 0 1.4em;
     z-index: 22;
 }
 
