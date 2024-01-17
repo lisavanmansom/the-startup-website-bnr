@@ -173,6 +173,10 @@ p {
     min-width: 15em;
 }
 
+audio { 
+    display: none;
+}
+
 .container-live-text {
     align-items: center;
     display: flex;
@@ -197,6 +201,7 @@ p {
     flex-direction: column;
     gap: .5em;
     margin: 0 0 0.5em 0;
+    z-index: 35;
 }
 
 .container-live-radio p:nth-of-type(1) {
@@ -652,7 +657,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 0 0 3em 0;
+    padding: 2em 0 3em 0;
 }
 
 
