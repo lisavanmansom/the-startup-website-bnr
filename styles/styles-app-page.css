@@ -168,8 +168,8 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
-    padding: 2em 0 0 0;
+    
+    padding: 10em 0 0 0;
     z-index: 30;
 }
 
@@ -177,7 +177,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 5em;
-    margin: -4.6em 0 0 25em;
+    margin: -10.6em 0 0 25em;
 }
 
 .container-1 h1 {
@@ -185,6 +185,7 @@ p {
     min-width: 10ch;
     font-size: 2em;
     line-height: 1.2em;
+    color: var(--primair-0);
 }
 
 .container-1 h2 {
@@ -192,11 +193,12 @@ p {
     min-width: 10ch;
     font-size: 1.5em;
     line-height: 1.2em;
+    color: var(--primair-0);
 }
 
 .container-1 img:nth-of-type(1) {
-    width: 27em;
-    margin: 0 14em .5em 0;
+    width: 21em;
+    margin: -7em 18em 0.5em 2em;
 }
 
 .container-1 img:nth-of-type(2) {
@@ -220,7 +222,7 @@ p {
 .container-2 {
     display: flex;
     flex-direction: column;
-    padding: 3em 0 0 0;
+    padding: 7em 0 0 0;
     align-items: center;
 }
 
@@ -286,6 +288,49 @@ p {
     margin: 0 auto;
     overflow: hidden;
     position: absolute;
+}
+
+.slice-1 { 
+    background-color: var(--primair-70);
+    width: 230px;
+    height: 2800px;
+    z-index: -9;
+
+    transform: skew(-9deg);
+    rotate: 90deg;
+
+    position: absolute;
+    top: -1140px;
+}
+
+.slice-2 {
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+    top: -138px;
+    right: -1050px;
+
+    z-index: -4;
+    rotate: -30deg;
+
+    border-top: 40px solid transparent;
+    border-bottom: 542px solid transparent;
+    border-right: 1150px solid var(--signal-colour);  
+  }
+
+.slice-3 { 
+    background-color: var(--primair-80-97);
+    width: 600px;
+    height: 2500px;
+
+    transform: skew(11deg);
+    rotate: 90deg;
+    z-index: -7;
+
+    position: absolute;
+    right: 150px;
+    top: -1270px;
 }
 
 /* footer styling */
@@ -361,7 +406,7 @@ nav ul {
 
     /* container 2 */
     .container-2 {
-        padding: 6em 0 0 0;
+        padding: 13em 0 0 0;
     }
     
     .container-2 h3 {
@@ -398,38 +443,86 @@ nav ul {
         gap: .75em;
         margin: 0 0 2.5em 0;
     }
+
+    /* slices */
+    .slice-1 { 
+        background-color: var(--primair-70);
+        width: 430px;
+        height: 2800px;
+        z-index: -9;
+
+        transform: skew(-9deg);
+        rotate: 90deg;
+
+        position: absolute;
+        top: -1075px;
+    }
+
+    .slice-2 {
+        width: 0;
+        height: 0;
+        
+        position: absolute;
+        top: -104px;
+        right: -900px;
+
+        z-index: 0;
+        rotate: -30deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 542px solid transparent;
+        border-right: 1150px solid var(--signal-colour);  
+      }
+
+      .slice-3 { 
+        background-color: var(--primair-80-97);
+        width: 600px;
+        height: 2500px;
+
+        transform: skew(11deg);
+        rotate: 90deg;
+        z-index: -1;
+
+        position: absolute;
+        right: 150px;
+        top: -1270px;
+    }
 }
+
 
 @media (min-width:1000px) {
     .container-1 {
         height: 29em;
     }
     .container-1-text {
-        width: 5em;
-        margin: -2.6em 0 0 -6em;
+        width: 8em;
+        margin: -18.6em 0 0 -6em;
     }
     
     .container-1 h1 {
         min-width: 11ch;
         margin: 2em 1em 0 0;
         font-size: 3.8em;
+        color: var(--primair-0);
     }
     
     .container-1 h2 {
+        min-width: 61ch;
         font-size: 1.8em;
         margin: .5em 0 0 .1em;
+        color: var(--primair-0);
     }
     
     .container-1 img:nth-of-type(1) {
         width: 18em;
-        margin: 0 -2em -6.5em 24em;
-        transform: matrix(2, 0, -0.5, 2, 0, 0);
+        margin: 0 -2em -1.5em 25em;
+        transform: matrix(2, 0, -0.5, 2, 9, 0);
     }
     
     .container-1 img:nth-of-type(2) {
         width: 14em;
-        margin: 0 0 4.5em -20em;
-        transform: matrix(-2.3, 0, 0.5, 2.5, 0, 0);
+        margin: 0 0 11.5em -20em;
+        transform: matrix(-2.3, 0, 0.5, 2.5, 5, 0);
     }
 
      /* app links */
@@ -448,7 +541,7 @@ nav ul {
     /* slices */
     .slice-1 { 
         background-color: var(--primair-70);
-        width: 360px;
+        width: 430px;
         height: 2800px;
         z-index: -9;
 
@@ -464,20 +557,20 @@ nav ul {
         height: 0;
 
         position: absolute;
-        top: 53px;
-        right: -380px;
+        top: -97px;
+        right: -685px;
 
         z-index: 0;
         rotate: -30deg;
 
         border-top: 40px solid transparent;
-        border-bottom: 420px solid transparent;
-        border-right: 1150px solid var(--signal-colour);
+        border-bottom: 512px solid transparent;
+        border-right: 1150px solid var(--signal-colour);  
       }
 
       .slice-3 { 
         background-color: var(--primair-80-97);
-        width: 400px;
+        width: 600px;
         height: 2500px;
 
         transform: skew(11deg);
@@ -495,7 +588,7 @@ nav ul {
 
         position: absolute;
         top: 53px;
-        left: -580px;
+        left: -577px;
 
         z-index: -2;
         rotate: -210deg;
@@ -536,8 +629,46 @@ nav ul {
         border-bottom: 1520px solid transparent;
         border-right: 1250px solid var(--primair-30-20);
     }
-
-    
-
 }
+
+@media (min-width:1153px) {
+    /* slices */
+    .container-1 img:nth-of-type(1) {
+        margin: 0 -2em -1.5em 32em;
+        transform: matrix(2, 0, -0.5, 2, 9, 0);
+    }
+
+    .slice-2 {
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: -48px;
+        right: -425px;
+
+        z-index: 0;
+        rotate: -30deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 512px solid transparent;
+        border-right: 1150px solid var(--signal-colour);    
+      }
+
+    .slice-4 { 
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: 53px;
+        left: -560px;
+
+        z-index: -2;
+        rotate: -210deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 420px solid transparent;
+        border-right: 1150px solid var(--signal-colour);
+    }
+}
+
 
