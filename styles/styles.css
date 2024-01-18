@@ -191,7 +191,7 @@ audio {
 
 .container-live-radio button { 
     width: 15em;
-    height: 3em;
+    height: 3.5em;
     font-weight: var(--font-header);
     border: solid var(--primair-30-20) .1em;
 }
@@ -202,6 +202,36 @@ audio {
     gap: .5em;
     margin: 0 0 0.5em 0;
     z-index: 35;
+}
+
+.play-radio {
+    position: relative;
+}
+
+.play-radio-svg {
+    position: absolute;
+    top: .7em;
+    left: .5em;
+}
+
+.pause-radio-svg {
+    position: absolute;
+    top: .7em;
+    left: .5em;
+}
+
+.hide {
+    z-index: -10;
+}
+
+.show {
+    z-index: 10;
+}
+
+.play-radio-text {
+    position: absolute;
+    top: 1.1em;
+    left: 3.6em;
 }
 
 .container-live-radio p:nth-of-type(1) {
@@ -853,7 +883,7 @@ nav ul {
     rotate: 90deg;
 
     position: absolute; 
-    top: -825px;
+    top: -817px;
 }
 
 .slice-4 { 
