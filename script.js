@@ -2,53 +2,37 @@
     // 1. Selecteren van element via class
     const playradio = document.querySelector('.play-radio');
     const audio = document.querySelector('audio');
+    var count = 0
 
     // 2. Event
-    playradio.addEventListener('click', () => {
-            audio.play();
-        });
-
-
-    playradio.addEventListener('dblclick', () => {
-            audio.pause();
-        });  
-
-    playradio.onplay = () => {
-        console.log();
-    };
+    function playPause(){
+      if(count == 0){
+        count = 1;
+        audio.play();
+      }else{
+        count = 0;
+        audio.pause();
+      }
+    }
 
     // text
-
     // 1. Selecteren van element via class
-    const changeText = document.querySelector('.play-radio-text');
-
-    // 2. Event
-    playradio.addEventListener("click", function() {
-        changeText.textContent = "Pauzeren";
-      });
-
-    changeText.addEventListener('dblclick', () => {
-        playradio.textContent = "Luister live";
-      });
-
-    // svg
-
-    // 1. Selecteren van element via class
+    const changeTextplay = document.querySelector('.play-radio-text');
+    const changeTextpause = document.querySelector('.pause-radio-text');
     const playSvg = document.querySelector('.play-radio-svg');
     const pauseSvg = document.querySelector('.pause-radio-svg');
 
     // 2. Event
     playradio.addEventListener('click', function (){
-        playSvg.classList.add('hide')
-        pauseSvg.classList.remove('show')
-      })
-
-    playradio.addEventListener('dblclick', function (){
-        playSvg.classList.remove('hide')
-        pauseSvg.classList.add('show')
+      changeTextplay.classList.toggle('hide')
+      playSvg.classList.toggle('hide')
     })
 
+    playradio.addEventListener("mouseover", hovered, false);
+    playradio.addEventListener("mouseout", hoveredOut, false);
 
-
-        
-
+    function hovered (e) {
+      console.log("Hovered!");
+      playradio.classList.add('background')
+      changeTextplay.classList.add('background')
+    }

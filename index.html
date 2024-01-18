@@ -58,7 +58,7 @@
             <p>10:00 - 11:00 uur</p>
             <div class="live-buttons">
 
-              <button class="play-radio">
+              <button class="play-radio" onclick="playPause()">
 
                 <span class="play-radio-svg"><svg height="35px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#FFD200">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -72,10 +72,18 @@
                 <g id="SVGRepo_iconCarrier"> <path style="fill:#FFD200;" d="M256,0C114.84,0,0,114.842,0,256s114.84,256,256,256c141.158,0,256-114.842,256-256S397.158,0,256,0z "/><path style="fill:#FFD200;" d="M256,0v512c141.158,0,256-114.842,256-256S397.158,0,256,0z"/><path style="fill:#000;" d="M318.061,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273 c12.851,0,23.273-10.42,23.273-23.273V162.909C341.333,150.056,330.912,139.636,318.061,139.636z"/><path style="fill:#00000;" d="M193.939,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273 c12.851,0,23.273-10.42,23.273-23.273V162.909C217.212,150.056,206.791,139.636,193.939,139.636z"/></g>
                 </svg></span>
 
-              <span class="play-radio-text">Luister live</span></button>
+              <span class="play-radio-text">Luister live</span>
+              <span class="pause-radio-text">Pauzeren</span></button>
               <audio controls preload="auto" src="https://27823.live.streamtheworld.com/BNR_NIEUWSRADIO.mp3?dist=bnrweb"></audio>
             
-              <button>Kijk live</button></div>
+              <button class="watch-radio">
+                <span><svg fill="#00000" width="35px" height="35px" viewBox="-748.8 -748.8 3417.60 3417.60" xmlns="http://www.w3.org/2000/svg" stroke="#00000" stroke-width="0.019200000000000002">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0">
+                  <rect x="-748.8" y="-748.8" width="3417.60" height="3417.60" rx="1708.8" fill="#FFD200" strokewidth="0"/></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g id="SVGRepo_iconCarrier"><path d="M0 240v1440h1500.536v-551.83L1920 1574.06V346.051l-419.464 445.78V240z" fill-rule="evenodd"/></g></svg></span>
+                  <span>Kijk live</span></button></div>
+
             <p>Misdaadjournalist Wouter Laumans en strafpleiter Christian Flokstra praten met advocaten en officieren van justitie over bijzondere zaken die hen altijd zullen bijblijven.</p>
         </div></article>
 

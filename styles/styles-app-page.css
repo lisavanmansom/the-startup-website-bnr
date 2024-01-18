@@ -25,9 +25,11 @@
  /* Primary palette */
  --signal-colour: #FFD200;
  --signal-colour-90: #FCD52D;
+ --signal-colour-50:#ffe678 ;
  --primair-100: #000000;
  --primair-80: #1F1F1F;
  --primair-80-97: #262520;
+ --primair-70: #3a3a3a;
  --primair-30: #D7D2CB;
  --primair-30-40: #E9E6E3;
  --primair-30-20: #F2F1F0;
@@ -168,6 +170,7 @@ p {
     justify-content: center;
     overflow: hidden;
     padding: 2em 0 0 0;
+    z-index: 30;
 }
 
 .container-1-text {
@@ -261,6 +264,28 @@ p {
     flex-direction: row;
     gap: .5em;
     margin: 0 0 2.5em 0;
+}
+
+/* slices styling */
+.background-container-1 {
+    display: block;
+    width: 100%;
+    height: 700px;
+
+    margin: 0 auto;
+    overflow: hidden;
+
+    position: absolute;
+}
+
+.background-container-2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
 }
 
 /* footer styling */
@@ -386,8 +411,8 @@ nav ul {
     
     .container-1 h1 {
         min-width: 11ch;
-        margin: 2em 0 0 0;
-        font-size: 2.8em;
+        margin: 2em 1em 0 0;
+        font-size: 3.8em;
     }
     
     .container-1 h2 {
@@ -418,6 +443,98 @@ nav ul {
 
     .container-2 {
         padding: 8em 0 0 0;
+    }
+
+    /* slices */
+    .slice-1 { 
+        background-color: var(--primair-70);
+        width: 360px;
+        height: 2800px;
+        z-index: -9;
+
+        transform: skew(-9deg);
+        rotate: 90deg;
+
+        position: absolute;
+        top: -1165px;
+    }
+
+    .slice-2 {
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: 53px;
+        right: -380px;
+
+        z-index: 0;
+        rotate: -30deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 420px solid transparent;
+        border-right: 1150px solid var(--signal-colour);
+      }
+
+      .slice-3 { 
+        background-color: var(--primair-80-97);
+        width: 400px;
+        height: 2500px;
+
+        transform: skew(11deg);
+        rotate: 90deg;
+        z-index: -1;
+
+        position: absolute;
+        right: 150px;
+        top: -1300px;
+    }
+
+    .slice-4 { 
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: 53px;
+        left: -580px;
+
+        z-index: -2;
+        rotate: -210deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 420px solid transparent;
+        border-right: 1150px solid var(--signal-colour);
+    }
+
+    .slice-5 { 
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: 100px;
+        left: -390px;
+
+        z-index: -7;
+        rotate: 210deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 1520px solid transparent;
+        border-right: 1250px solid var(--primair-30-40);
+    }
+
+    .slice-6 { 
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: 100px;
+        right: -340px;
+        
+        z-index: -17;
+        rotate: 59deg;
+
+        border-top: 40px solid transparent;
+        border-bottom: 1520px solid transparent;
+        border-right: 1250px solid var(--primair-30-20);
     }
 
     
