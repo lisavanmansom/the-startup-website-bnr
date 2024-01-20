@@ -197,8 +197,9 @@ p {
 }
 
 .container-1 img:nth-of-type(1) {
-    width: 21em;
-    margin: -7em 18em 0.5em 2em;
+    width: 13em;
+    margin: -7em 26.5em 0.5em 2em;
+    transform: matrix(2, 0, -0.5, 2, 48, 0);
 }
 
 .container-1 img:nth-of-type(2) {
@@ -364,6 +365,14 @@ nav ul {
 }
 
 /* mediaquery */
+@media (min-width:475px){
+    .container-1 img:nth-of-type(1) {
+        width: 14em;
+        margin: -7em 30.5em 0.5em 2em;
+        transform: matrix(2, 0, -0.5, 2, 106, 6);
+    }
+}
+
 @media (min-width:600px) {
     .container-1 {
         height: 28em;

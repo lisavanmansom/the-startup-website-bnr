@@ -24,6 +24,7 @@
 :root {
  /* Primary palette */
  --signal-colour: #FFD200;
+ --signal-colour-110: #edc201;
  --signal-colour-90: #FCD52D;
  --signal-colour-50:#ffe678 ;
  --primair-100: #000000;
@@ -171,9 +172,8 @@ p {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin: 3em 0 3.5em 0;
+    margin: 3em 0 3em 0;
     margin-inline: auto;
-    padding: 0 0 2em 0;
     min-width: 15em;
 }
 
@@ -281,7 +281,7 @@ audio {
 
 .container-live-radio p:nth-of-type(2) {
     display: flexbox;
-    padding: 0.85em 2.5em 0 2.5em;
+    padding: 1em 2.5em 1em 2.5em;
     max-width: 45ch;
     text-align: justify;
 }
@@ -291,7 +291,7 @@ audio {
     background-color: var(--primair-80);
     display: flex;
     flex-direction: column;
-    padding: 2em 0 2.7em 0;
+    padding: 5em 0 5em 0;
     margin: 2.6em 0 0 0;
     min-width: 15em;
 }
@@ -335,6 +335,11 @@ audio {
     width: 15em;
 }
 
+.container-promoquote-efficientlistening a:hover {
+    background-color: var(--signal-colour-110);
+    transition: 0.4s ease;
+}
+
 /* main-content styling | container 3 */
 .container-promo-app {
     display: flex;
@@ -345,7 +350,7 @@ audio {
 
 .container-promo-app h2 {
     display: flexbox;
-    padding: 1.5em .85em 0 1.2em;
+    padding: 2em .85em 0 1.2em;
     text-align: start;
 
     z-index: 10;
@@ -364,6 +369,12 @@ audio {
     padding: 0.5em 2.5em 2.5em 2.5em;
     max-width: 55ch;
     text-align: justify;
+    z-index: 23;
+}
+
+.container-promo-app a:nth-of-type(1):hover {
+    background-color: var(--primair-100);
+    transition: 0.4s ease;
 }
 
 .app-landing-page {
@@ -453,8 +464,6 @@ nav ul {
     position: absolute;
 }
 
-
-
 .background-container-2 {
     display: block;
     width: 100%;
@@ -475,13 +484,113 @@ nav ul {
     position: absolute;
 }
 
+.slice-1 { 
+    background-color: var(--primair-30-20);
+    width: 340px;
+    height: 3200px;
+
+    transform: skew(-5deg);
+    rotate: 90deg;
+    z-index: -2;
+
+    position: absolute;
+    top: -1582px;
+}
+
+.slice-2 { 
+    background-color: var(--primair-30-40);
+    width: 481px;
+    height: 3200px;
+
+    transform: skew(5deg);
+    rotate: 90deg;
+    z-index: -3;
+
+    position: absolute;
+    top: -1209px;
+}
+
+.slice-3 { 
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 401px;
+    left: -23px;
+    z-index: 9;
+    rotate: 0deg;
+
+    border-top: 200px solid transparent;
+    border-bottom: 69px solid transparent;
+    border-right: 1792px solid var(--primair-40-50);
+}
+
+.slice-4 { 
+    background-color: var(--primair-30);
+    width: 210px;
+    height: 3200px;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+    z-index: 2;
+
+    position: absolute;
+    top: -1034px;
+}
+
+.slice-5 { 
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 513px;
+    left: -23px;
+    z-index: 7;
+    rotate: -177deg;
+
+    border-top: 200px solid transparent;
+    border-bottom: 68px solid transparent;
+    border-right: 1792px solid var(--primair-30-40);
+}
+
+.slice-6 { 
+    background-color: var(--primair-30-30);
+    width: 250px;
+    height: 3200px;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+    z-index: 9;
+
+    position: absolute;
+    top: -972px;
+}
+
 /* mediaquery's */
 @media (min-width:600px) {
     .menu-search-mobile {
         margin: .25em 0 0 0;
     }
-
     /* container 1 */
+    .container-live-radio img {
+        width: 11em;
+    }
+    .container-live-radio h1 {
+        font-size: 2em;
+    }
+
+    .container-live-radio p:nth-of-type(1) {
+        font-size: 1.4em;
+    }
+
+    .container-live-radio p:nth-of-type(2) {
+        font-size: 1.4em;
+        margin: 0 0 1.5em 0;
+        padding-bottom: 0em;
+        max-width: 41ch;
+    }
+
+
     .live-buttons {
         display: flex;
         flex-direction: row;
@@ -490,12 +599,11 @@ nav ul {
         width: 25em;
     }
 
-    .container-live-radio p:nth-of-type(2) {
-        max-width: 55ch;
-        margin: 0 0 1.5em 0;
+   /* container 2 */
+    .container-promoquote-efficientlistening {
+        padding: 5em 0 5em 0;
     }
 
-   /* container 2 */
     .container-promoquote-efficientlistening a {
         margin: 0 0 0 21em;
     }
@@ -508,7 +616,7 @@ nav ul {
 
     .container-promo-app h2 {
         display: flexbox;
-        padding: 1.5em 0 .1em 0;
+        padding: 2.5em 0 .1em 0;
         font-size: 2.5em;
         z-index: 10;
 }
@@ -522,10 +630,81 @@ nav ul {
     .container-promo-app p {
         padding: 0 2.5em 2em 2.5em;
         max-width: 45ch;
-        text-align: justify-all;
+        text-align: justify;
+        font-size: 1.4em;
 }
 
+    /* achtergrond */
+    .slice-2 { 
+        background-color: var(--primair-30-40);
+        width: 481px;
+        height: 3200px;
+    
+        transform: skew(5deg);
+        rotate: 90deg;
+        z-index: -3;
+    
+        position: absolute;
+        top: -1209px;
+    }
+    
+    .slice-3 { 
+        width: 0;
+        height: 0;
+    
+        position: absolute;
+        top: 456px;
+        left: -23px;
+        z-index: 9;
+        rotate: 0deg;
+    
+        border-top: 200px solid transparent;
+        border-bottom: 69px solid transparent;
+        border-right: 1792px solid var(--primair-40-50);
+    }
+
+    .slice-4 { 
+        background-color: var(--primair-30);
+        width: 210px;
+        height: 3200px;
+    
+        transform: skew(3deg);
+        rotate: 90deg;
+        z-index: 2;
+    
+        position: absolute;
+        top: -1104px;
+    }
+
+    .slice-5 { 
+        width: 0;
+        height: 0;
+    
+        position: absolute;
+        top: 443px;
+        left: -23px;
+        z-index: 7;
+        rotate: -177deg;
+    
+        border-top: 200px solid transparent;
+        border-bottom: 68px solid transparent;
+        border-right: 1792px solid var(--primair-30-40);
+    }
+
+    .slice-6 { 
+        background-color: var(--primair-30-30);
+        width: 250px;
+        height: 3200px;
+    
+        transform: skew(3deg);
+        rotate: 90deg;
+        z-index: 9;
+    
+        position: absolute;
+        top: -1012px;
+    }
 }
+
 
 
 @media (min-width:635px) {
@@ -535,7 +714,7 @@ nav ul {
         justify-content: center;
         display: flex;
         flex-direction: column;
-        padding: 3em 5em 2em 0;
+        padding: 5em 5em 5em 0;
     }
 
     .container-promoquote-efficientlistening h2 {
@@ -563,20 +742,16 @@ nav ul {
         z-index: 25;
 }
 
-.container-promo-app h2 {
-    z-index: 30;
-}
-
-.container-promo-app h4 {
-    z-index: 30;
-}
-
 }
 
 @media (min-width:800px) { 
+    /* container 1 */
+    .container-live-radio p:nth-of-type(2) {
+        max-width: 55ch;
+    }
         /* container 2 */
         .container-promoquote-efficientlistening {
-            padding: 3em 19em 6em 0;
+            padding: 7em 19em 7em 0;
             align-items: center;
             justify-content: center;
             display: flex;
@@ -586,26 +761,95 @@ nav ul {
 
     .container-promoquote-efficientlistening h4 {
         padding: 1em 10.3em 0 0;
-}
+    }
 
     .container-promoquote-efficientlistening p {
         padding: .2em 8em 1.5em 0;
         max-width: 75ch;
-}
+    }
 
     .container-promoquote-efficientlistening a {
         margin: 0 0 0 48.8em;
-}
+    }
 
-.container-promo-app {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 2em 0 3em 0;
-}
+    .container-promo-app {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 5em 0 3em 0;
+    }
 
 
 /* achtergrond elementen */
+.slice-2 { 
+    background-color: var(--primair-30-40);
+    width: 481px;
+    height: 3200px;
+
+    transform: skew(5deg);
+    rotate: 90deg;
+    z-index: -3;
+
+    position: absolute;
+    top: -1269px;
+}
+
+.slice-3 { 
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 393px;
+    left: -23px;
+    z-index: 9;
+    rotate: 0deg;
+
+    border-top: 200px solid transparent;
+    border-bottom: 69px solid transparent;
+    border-right: 1792px solid var(--primair-40-50);
+}
+
+.slice-4 { 
+    background-color: var(--primair-30);
+    width: 250px;
+    height: 3200px;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+    z-index: 2;
+
+    position: absolute;
+    top: -1026px;
+}
+
+.slice-5 { 
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 505px;
+    left: -23px;
+    z-index: 7;
+    rotate: -177deg;
+
+    border-top: 200px solid transparent;
+    border-bottom: 68px solid transparent;
+    border-right: 1792px solid var(--primair-30-40);
+}
+
+.slice-6 { 
+    background-color: var(--primair-30-30);
+    width: 250px;
+    height: 3200px;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+    z-index: 9;
+
+    position: absolute;
+    top: -913px;
+}
+
 }
 
 @media (min-width:850px) {
@@ -655,7 +899,7 @@ nav ul {
         display: flex;
         flex-direction: row;
         gap: 3.5em;
-        margin: 4em 0 9em 0;
+        margin: 4em 0 11em 0;
     }
 
     .container-live-text {
@@ -724,7 +968,7 @@ nav ul {
         align-items: center;
         justify-content: center;
         display: flex;
-        padding: 8.5em 0 1em 0;
+        padding: 0 0 1em 0;
 }
 
     .container-promo-app h2 {
@@ -745,20 +989,6 @@ nav ul {
         max-width: 60ch;
         font-size: 1.4em;
         text-align: justify;
-}
-
-
-.slice-1 { 
-    background-color: var(--primair-30-20);
-    width: 340px;
-    height: 3200px;
-
-    transform: skew(-5deg);
-    rotate: 90deg;
-    z-index: -2;
-
-    position: absolute;
-    top: -1582px;
 }
 
 .slice-2 { 
@@ -787,47 +1017,6 @@ nav ul {
     border-top: 200px solid transparent;
     border-bottom: 69px solid transparent;
     border-right: 1792px solid var(--primair-40-50);
-}
-
-.slice-4 { 
-    background-color: var(--primair-30);
-    width: 250px;
-    height: 3200px;
-
-    transform: skew(3deg);
-    rotate: 90deg;
-    z-index: 2;
-
-    position: absolute;
-    top: -942px;
-}
-
-.slice-5 { 
-    width: 0;
-    height: 0;
-
-    position: absolute;
-    top: 596px;
-    left: -23px;
-    z-index: 7;
-    rotate: -177deg;
-
-    border-top: 200px solid transparent;
-    border-bottom: 68px solid transparent;
-    border-right: 1792px solid var(--primair-30-40);
-}
-
-.slice-6 { 
-    background-color: var(--primair-30-30);
-    width: 250px;
-    height: 3200px;
-
-    transform: skew(3deg);
-    rotate: 90deg;
-    z-index: 9;
-
-    position: absolute;
-    top: -742px;
 }
 }
 
