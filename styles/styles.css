@@ -30,10 +30,10 @@
  --primair-80: #1F1F1F;
  --primair-80-97: #262520;
  --primair-70: #3a3a3a;
- --primair-50: #777777;
  --primair-40-50: #d6d0c9;
  --primair-30: #D7D2CB;
  --primair-30-40: #E9E6E3;
+ --primair-30-30: #f4f2f0;
  --primair-30-20: #F2F1F0;
  --primair-0: #fff;
 
@@ -229,7 +229,7 @@ audio {
     position: absolute;
     top: 1.1em;
     left: 3.8em;
-    background-color: var(--primair-0);
+    background-color: var(--primair-30-20);
     z-index: 10;
 }
 
@@ -264,17 +264,11 @@ audio {
     transition: 0.4s ease;
 }
 
-/* .play-radio:hover {
-    background-color: var(--primair-30-20);
-    transition: 0.4s ease;
-} */
-
 .background:hover {
     background-color: var(--primair-30-20);
     transition: 0.4s ease;
     }
     
-
 
 .watch-radio:hover {
     background-color: var(--primair-30-20);
@@ -346,7 +340,7 @@ audio {
     display: flex;
     flex-direction: column;
     z-index: 5;
-    background-color: var(--signal-colour);
+    background-color: var(--primair-30-20);
 }
 
 .container-promo-app h2 {
@@ -730,13 +724,13 @@ nav ul {
         align-items: center;
         justify-content: center;
         display: flex;
-        padding: 5.5em 0 1em 0;
+        padding: 8.5em 0 1em 0;
 }
 
     .container-promo-app h2 {
         display: flexbox;
-        padding: 1.5em 0 .1em 0;
-        font-size: 2.5em;
+        padding: 1.5em 0 0 0;
+        font-size: 3em;
         z-index: 10;
 }
 
@@ -747,9 +741,10 @@ nav ul {
 }
 
     .container-promo-app p {
-        padding: 0 2.5em 2.5em 2.5em;
-        max-width: 67ch;
-        text-align: justify-all;
+        padding: 0.5em 2.5em 1.5em 2.5em;
+        max-width: 60ch;
+        font-size: 1.4em;
+        text-align: justify;
 }
 
 
@@ -792,6 +787,47 @@ nav ul {
     border-top: 200px solid transparent;
     border-bottom: 69px solid transparent;
     border-right: 1792px solid var(--primair-40-50);
+}
+
+.slice-4 { 
+    background-color: var(--primair-30);
+    width: 250px;
+    height: 3200px;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+    z-index: 2;
+
+    position: absolute;
+    top: -942px;
+}
+
+.slice-5 { 
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 596px;
+    left: -23px;
+    z-index: 7;
+    rotate: -177deg;
+
+    border-top: 200px solid transparent;
+    border-bottom: 68px solid transparent;
+    border-right: 1792px solid var(--primair-30-40);
+}
+
+.slice-6 { 
+    background-color: var(--primair-30-30);
+    width: 250px;
+    height: 3200px;
+
+    transform: skew(3deg);
+    rotate: 90deg;
+    z-index: 9;
+
+    position: absolute;
+    top: -742px;
 }
 }
 
