@@ -28,11 +28,3 @@
       playSvg.classList.toggle('hide')
     })
 
-    playradio.addEventListener("mouseover", hovered, false);
-    playradio.addEventListener("mouseout", hoveredOut, false);
-
-    function hovered (e) {
-      console.log("Hovered!");
-      playradio.classList.add('background')
-      changeTextplay.classList.add('background')
-    }
