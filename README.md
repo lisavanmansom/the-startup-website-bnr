@@ -15,8 +15,8 @@ In beide webpagina's heb ik de huisstijl aangehouden van BNR, wat de opdrachtgev
 
 [Live-link BNR landing-page](https://lisavanmansom.github.io/the-startup-website-bnr/)
 
-<img width="397" src="https://github.com/lisavanmansom/the-startup-website-bnr/assets/144007419/25e0d3a9-7d6d-4183-9691-2cc18f349cae">
-<img width="475" src="https://github.com/lisavanmansom/the-startup-website-bnr/assets/144007419/62a076a6-9787-44d4-881f-eb021a61403b">
+<img width="327" src="https://github.com/lisavanmansom/the-startup-website-bnr/assets/144007419/25e0d3a9-7d6d-4183-9691-2cc18f349cae">
+<img width="390" src="https://github.com/lisavanmansom/the-startup-website-bnr/assets/144007419/62a076a6-9787-44d4-881f-eb021a61403b">
 
 ## Kenmerken
 De technieken die ik heb gebruikt zijn HTML, CSS en Javascript. De HTML is grotendeels semantisch, gevalideerd en toegankelijk gemaakt. Bij CSS heb ik gebruikt van custom properties. Om live te luisteren heb ik een button gebruikt, ik heb bij de javascript-code mij aangehouden aan het 3-stappenplan.
